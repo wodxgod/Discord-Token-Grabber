@@ -1,5 +1,5 @@
 <p align="center">A Discord token grabber written in Python 3.</p>
-*<p align="center"> Python 3.6+</p>
+<p align="center"> Python 3.6+</p>
 
 *This version of the grabber only supports **Windows**.*
 ***
