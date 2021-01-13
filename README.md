@@ -13,21 +13,22 @@
 
 * Allows you to send tokens in discord / telegram
 ***
-
 # Preview
 ### Discord:
 *`WEBHOOK_STYLE : True(Slower)`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798917458840518696/unknown.png?width=341&height=567)
+***
 *`WEBHOOK_STYLE : False`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798918343061929994/unknown.png)
-
+***
 ### Telegram:
 *`TELEGRAM_STYLE : True(Slower)`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798919478548103168/unknown.png)
+***
 *`TELEGRAM_STYLE : False`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798921203824984093/unknown.png)
-
 ***
+
 # How to use:
 #### Installing Telegram:
 ```console
