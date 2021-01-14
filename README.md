@@ -46,18 +46,18 @@ python builder.py
 # Preview grabber info:
 ### Discord Webhook:
 <p align="center">WEBHOOK_STYLE : 1(Slower)</p>
-<р align="center"><img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798917458840518696/unknown.png?width=341&height=567"></p>
+<img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798917458840518696/unknown.png?width=341&height=567">
 
 <p align="center">WEBHOOK_STYLE : 2</p>
-<р align="center"><img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798918343061929994/unknown.png"></p>
----------------------------------------------------------------------------------------------------------
+<img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798918343061929994/unknown.png">
+
 ### Telegram Message:
 <p align="center">TELEGRAM_STYLE : 1(Slower)</p>
-<р align="center"><img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798919478548103168/unknown.png"></p>
+<img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798919478548103168/unknown.png">
 
 <p align="center">TELEGRAM_STYLE : 2</p>
-<р align="center"><img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798921203824984093/unknown.png"></p>
----------------------------------------------------------------------------------------------------------
+<img align="center" src="https://media.discordapp.net/attachments/769178644697972767/798921203824984093/unknown.png">
+
 ***
 
 ## Author
