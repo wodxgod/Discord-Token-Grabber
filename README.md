@@ -1,3 +1,6 @@
+# OUTDATED CODE
+
+
 # A Discord Token Grabber Builder
 * The original version of the grabber is supported by python 3.6+
 * The builder was tested in python 3.8.6, i do not give any guarantees that it will work on other python versions.
