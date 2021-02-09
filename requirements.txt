@@ -1,5 +1,0 @@
-colorama>=0.4.4
-numpy>=1.19.5
-pyinstaller>=4.1
-requests>=2.25.0
-telegram==0.0.1
