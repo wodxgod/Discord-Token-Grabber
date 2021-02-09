@@ -1,6 +1,5 @@
 # A Discord Token Grabber
-* The original version of the grabber is supported by python 3.6+
-* The builder was tested in python 3.8.6, i do not give any guarantees that it will work on other python versions.
+* Python 3.6+
 * **Grabber only for Windows.</b></p>**
 ***
 # Features:
